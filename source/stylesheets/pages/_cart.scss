@@ -1,0 +1,13 @@
+.cart{
+    &-img{
+        display: block;
+        width:110px;
+        height:110px;
+        object-fit: cover
+    }
+    &-content{
+        .input-group{
+            width:120px
+        }
+    }
+}

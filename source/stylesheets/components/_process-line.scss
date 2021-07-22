@@ -1,0 +1,49 @@
+.process-step{
+    position: relative;
+    .step{ //circle
+        background-color: $primary;
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        z-index:1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $light;
+        &.active{
+            &::after{
+                content: "";
+                height: 14px;
+                width: 14px;
+                display: block;
+                background-color: #EAF0ED;
+                border-radius: 20px;
+            }
+        };
+        &.check{
+            background-color: $light;
+            color:$primary
+        }
+    }
+    &::after{ //line
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $light;
+    }
+    &.dark{
+        &::after{
+            background-color: $secondary;
+        }
+        .step{
+            border: none;
+        }
+        .check{
+            background-color: $secondary;
+            color:$light
+        }
+    }
+}

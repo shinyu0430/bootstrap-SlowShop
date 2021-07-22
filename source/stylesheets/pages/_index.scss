@@ -1,0 +1,55 @@
+.banner{
+    &-menu{
+        margin-top: -90px;
+        li{
+            height:256px;  
+            position: relative;
+            overflow: hidden;
+            &:hover,&.active{
+                .banner-menu-cover{
+                    background-color: rgba($red,0.8);
+                }
+                .banner-menu-picture{
+                    background-color: rgba($primary,0.5);
+                    filter: blur(0px);
+                }
+                a{
+                    color:$light;
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            transition:1s;
+        }
+        span{
+            z-index:2;
+        }
+        &-picture{
+            position: absolute;
+            filter: blur(7px);
+            top: -10px;
+            bottom: -10px;
+            right: -10px;
+            left: -10px;
+            transition:1s;
+        }
+        &-cover{
+            position: absolute;
+            background-color: rgba($light,0.7);
+            z-index:1;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transition:1s;
+        }
+    }
+    
+}
+
+.mh-md-400{
+    @include media-breakpoint-up(md) { 
+        max-height:400px;
+    }
+}
