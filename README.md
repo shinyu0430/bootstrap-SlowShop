@@ -1,6 +1,4 @@
-# 六角學院 Gulp 範例
-
-## 安裝環境
+# 安裝環境
 
 ```
 npm install gulp -g
@@ -15,4 +13,3 @@ npm install
 gulp
 ```
 
-[範例網站](https://hexschool.github.io/gulp-demo/)。
