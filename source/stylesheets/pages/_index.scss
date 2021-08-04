@@ -48,8 +48,8 @@
     
 }
 
-.mh-md-400{
+.mh-md-350{
     @include media-breakpoint-up(md) { 
-        max-height:400px;
+        max-height:350px;
     }
 }
