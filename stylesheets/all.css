@@ -8657,8 +8657,8 @@ h1 a {
     transition: 1s; }
 
 @media (min-width: 768px) {
-  .mh-md-400 {
-    max-height: 400px; } }
+  .mh-md-350 {
+    max-height: 350px; } }
 
 .cart-img {
   display: block;
